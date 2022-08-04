@@ -1,0 +1,93 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.introo {
+    background-color: #007bff;
+
+}
+
+#mainNavbar .nav-item {
+    font-size: 0.9rem;
+
+
+
+}
+
+.appointment {
+    display: flex;
+}
+
+.buttonNav {
+    background-color: #00D363;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.6em 1.3em;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.buttonNav:hover {
+    background-color: #007bff;
+    color: #00D363;
+    border: #00D363 1px solid;
+}
+
+.appointment .logInLink {
+    font-size: 0.8rem;
+
+}
+
+.subNav {
+    height: 60px;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.introo2 {
+    background-color: #4C4C4C;
+
+}
+
+.buttonDesign {
+    background-color: black;
+    border: none;
+}
+
+.introo2 .navbarIcon {
+    background-color: black;
+    color: white;
+}
+
+
+/* not working */
+.navLinkGroup .nav-link:hover {
+    display: flex;
+    color: #00D363;
+
+}
+
+
+
+@media (max-width: 992px) {
+    .appointment {
+        display: none;
+    }
+
+    .buttonNavbar {
+        display: table;
+
+    }
+
+
+
+}
+
+@media (min-width: 993px) {
+    .introo2 {
+        display: none;
+    }
+}
