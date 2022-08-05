@@ -22,8 +22,8 @@ html,body {
   bottom: 0;
   right: 10%;
 }
-#mainNavbar .nav-item {
-    font-size: 0.9rem;
+#mainNavbar {
+    padding: 1.5rem 4rem;
 }
 
 .nav-item{
@@ -68,6 +68,8 @@ html,body {
 .buttonDesign {
     background-color: black;
     border: none;
+    display: flex;
+    align-items: center;
 }
 
 .introo2 .navbarIcon {
@@ -133,29 +135,34 @@ html,body {
   visibility: visible;
 }
 
+.introo2 {
+  display: none;
+}
 
-
-@media (max-width: 786px) {
+@media (max-width: 786px) {  /*tablets*/
     .appointment {
         display: none;
     }
 
     .buttonNavbar {
         display: block;
-
     }
 
-    .navbar-btn{
-      margin-left: 78%;
-    }
+    
 
     .intro-img{
       display: none;
     }
+
+    .introo2{
+      display: block;
+      margin: 0 1rem 0 1rem;
+    }
 }
 
-@media (min-width: 993px) {
-    .introo2 {
-        display: none;
-    }
+
+
+@media (max-width: 575px) {    /*mobile*/
+
+
 }
