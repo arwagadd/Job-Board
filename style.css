@@ -1,0 +1,161 @@
+html,body {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.sec1 {
+    background-image: url(https://preview.colorlib.com/theme/jobboard2/img/banner/xbanner.png.pagespeed.ic.1mHl71h7GD.png);
+    height: 700px;
+    display: block;
+    position: relative;
+}
+
+.introo{
+  position: relative;
+
+}
+.intro-img{
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+#mainNavbar .nav-item {
+    font-size: 0.9rem;
+}
+
+.nav-item{
+  margin-right: 2rem;
+}
+.appointment {
+    display: flex;
+}
+
+.buttonNav {
+    background-color: #00D363;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.6em 1.3em;
+    color: white;
+    font-size: 1.1rem;
+    transition-duration: 0.7s;
+}
+
+.buttonNav:hover {
+    background-color: #007bff;
+    color: #00D363;
+    border: #00D363 1px solid;
+}
+
+.appointment .logInLink {
+    font-size: 0.8rem;
+
+}
+
+.subNav {
+    height: 60px;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.introo2 {
+    background-color: #4C4C4C;
+
+}
+
+.buttonDesign {
+    background-color: black;
+    border: none;
+}
+
+.introo2 .navbarIcon {
+    background-color: black;
+    color: white;
+}
+
+.font1{
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-link{
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 0.2em;
+  transition: all ease 0.4s;
+  transform: rotate(45deg);
+}
+
+.drop-list{
+  opacity: 0;
+  visibility: hidden;
+    background-color: white;
+    color: black;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    transition: all ease 0.5s;
+    padding:0 5rem 1rem 1rem;
+    border:1px solid rgb(122, 131, 139);
+
+}
+.components{
+  margin-top:1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.components:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(122, 131, 139);
+}
+
+/* not working */
+.nav-link:hover {
+    color: #00D363;
+
+}
+
+.droplist-nav:hover .drop-list{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+@media (max-width: 786px) {
+    .appointment {
+        display: none;
+    }
+
+    .buttonNavbar {
+        display: block;
+
+    }
+
+    .navbar-btn{
+      margin-left: 78%;
+    }
+
+    .intro-img{
+      display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .introo2 {
+        display: none;
+    }
+}
