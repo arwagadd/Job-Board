@@ -13,7 +13,7 @@ body {
 
 .sec1 {
     background-image: url(https://preview.colorlib.com/theme/jobboard2/img/banner/xbanner.png.pagespeed.ic.1mHl71h7GD.png);
-    height: 700px;
+    height: fit-content;
     display: block;
     position: relative;
     display: block;
@@ -25,10 +25,10 @@ body {
 }
 
 .intro-img {
-    width: 519.75;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    right: 10%;
+    right: 10%; */
+    width: 50%;
 }
 
 #mainNavbar {
@@ -152,12 +152,7 @@ body {
 
 .slider-text {
 
-    position: absolute;
-    left: 270px;
-    bottom: 210px;
-    display: block;
-
-
+    
 
 }
 
@@ -183,39 +178,14 @@ body {
     margin-bottom: 35px;
 }
 
-.textAndPicture {
+.text-and-picture {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5%;
 }
 
 
-@media (max-width: 786px) {
-
-    /*tablets*/
-    .appointment {
-        display: none;
-    }
-
-    .buttonNavbar {
-        display: block;
-    }
-
-
-
-    .intro-img {
-        display: none;
-    }
-
-    .introo2 {
-        display: block;
-        margin: 0 1rem 0 1rem;
-    }
-
-    .textAndPicture {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-}
 
 .sec2 {
     display: flex;
@@ -252,6 +222,7 @@ body {
     border: #007bff 0.3px solid;
 }
 
+
 .font6 {
     font-size: 1.125rem;
     text-align: left;
@@ -269,11 +240,58 @@ body {
     font-size: 2.375rem;
 }
 
+.secondRow{
+    margin-top: 2rem;
+}
 
 
 
 
+@media (max-width: 786px) {
+    html,body{
+        font-size: 14px;
+    }
+    .sec1{
+        padding-bottom: 1rem;
+    }
 
+    /*tablets*/
+    .appointment {
+        display: none;
+    }
+
+    .buttonNavbar {
+        display: block;
+    }
+
+
+
+    .intro-img {
+        display: none;
+    }
+
+    .introo2 {
+        display: block;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .text-and-picture {
+        margin: 0;
+    }
+
+    .slider-text{
+        position: initial;
+        margin: 2rem;
+    }
+
+    .buttonForm{
+        width:-webkit-fill-available;
+    }
+
+    .buttonCollection{
+        display: inline;
+    }
+}
 
 
 @media (max-width: 575px) {
