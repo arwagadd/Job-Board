@@ -1,4 +1,5 @@
-html,body {
+html,
+body {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -6,29 +7,38 @@ html,body {
     font-size: 16px;
 }
 
+body {
+    min-height: 5000px;
+}
+
 .sec1 {
     background-image: url(https://preview.colorlib.com/theme/jobboard2/img/banner/xbanner.png.pagespeed.ic.1mHl71h7GD.png);
     height: 700px;
     display: block;
     position: relative;
+    display: block;
 }
 
-.introo{
-  position: relative;
+.introo {
+    position: relative;
 
 }
-.intro-img{
-  position: absolute;
-  bottom: 0;
-  right: 10%;
+
+.intro-img {
+    width: 519.75;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
 }
+
 #mainNavbar {
     padding: 1.5rem 4rem;
 }
 
-.nav-item{
-  margin-right: 2rem;
+.nav-item {
+    margin-right: 2rem;
 }
+
 .appointment {
     display: flex;
 }
@@ -77,30 +87,30 @@ html,body {
     color: white;
 }
 
-.font1{
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
+.font1 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-.nav-link{
-  transition: ease-in-out;
-  transition-duration: 0.2s;
+.nav-link {
+    transition: ease-in-out;
+    transition-duration: 0.2s;
 }
 
 .arrow {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  margin-left: 0.2em;
-  transition: all ease 0.4s;
-  transform: rotate(45deg);
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 0.2em;
+    transition: all ease 0.4s;
+    transform: rotate(45deg);
 }
 
-.drop-list{
-  opacity: 0;
-  visibility: hidden;
+.drop-list {
+    opacity: 0;
+    visibility: hidden;
     background-color: white;
     color: black;
     position: absolute;
@@ -108,20 +118,21 @@ html,body {
     align-items: center;
     border-radius: 3px;
     transition: all ease 0.5s;
-    padding:0 5rem 1rem 1rem;
-    border:1px solid rgb(122, 131, 139);
+    padding: 0 5rem 1rem 1rem;
+    border: 1px solid rgb(122, 131, 139);
 
 }
-.components{
-  margin-top:1rem;
-  font-size: 1rem;
-  font-weight: 600;
+
+.components {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-.components:hover{
-  text-decoration: underline;
-  cursor: pointer;
-  color: rgb(122, 131, 139);
+.components:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(122, 131, 139);
 }
 
 /* not working */
@@ -130,16 +141,56 @@ html,body {
 
 }
 
-.droplist-nav:hover .drop-list{
-  opacity: 1;
-  visibility: visible;
+.droplist-nav:hover .drop-list {
+    opacity: 1;
+    visibility: visible;
 }
 
 .introo2 {
-  display: none;
+    display: none;
 }
 
-@media (max-width: 786px) {  /*tablets*/
+.slider-text {
+
+    position: absolute;
+    left: 270px;
+    bottom: 210px;
+    display: block;
+
+
+
+}
+
+.sec1 {
+    position: relative;
+}
+
+.font2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 8px;
+
+}
+
+.font3 {
+    font-size: 4rem;
+    color: white;
+}
+
+.font4 {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.textAndPicture {
+    display: flex;
+}
+
+
+@media (max-width: 786px) {
+
+    /*tablets*/
     .appointment {
         display: none;
     }
@@ -148,21 +199,95 @@ html,body {
         display: block;
     }
 
-    
 
-    .intro-img{
-      display: none;
+
+    .intro-img {
+        display: none;
     }
 
-    .introo2{
-      display: block;
-      margin: 0 1rem 0 1rem;
+    .introo2 {
+        display: block;
+        margin: 0 1rem 0 1rem;
     }
+
+    .textAndPicture {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}
+
+.sec2 {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: white;
+}
+
+.buttonForm {
+    background-color: #00D363;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.7em 4.5em;
+    color: white;
+    font-size: 1.1rem;
+    transition-duration: 0.7s;
+}
+
+.buttonForm:hover {
+    background-color: white;
+    color: #00D363;
+    border: #00D363 1px solid;
+}
+
+.buttonCollection button {
+    padding: 8px 6px;
+    border: #90e0ef 0.3px solid;
+    color: #007bff;
+    background-color: white;
+    border-radius: 0.2em;
+}
+
+.buttonCollection button:hover {
+    border: #007bff 0.3px solid;
+}
+
+.font6 {
+    font-size: 1.125rem;
+    text-align: left;
+}
+
+.sec3 {
+    background-color: #f5f7fa;
+    padding: 100px;
+    width: 100%;
+    height: 1000px;
+
+}
+
+.font7 {
+    font-size: 2.375rem;
 }
 
 
 
-@media (max-width: 575px) {    /*mobile*/
 
+
+
+
+
+@media (max-width: 575px) {
+    /*mobile*/
+
+
+}
+
+@media(max-width:1375) {
+    .slider-text {
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
 
 }
