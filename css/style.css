@@ -470,7 +470,6 @@ h4:hover,
 
 .carousel-area {
     background-color: none;
-    height: 230px;
     width: 100%;
 }
 
@@ -541,26 +540,29 @@ h4:hover,
     background-repeat: no-repeat;
 
 }
-
+.two-blue-container{
+    display: flex;
+}
 .background-area-1 {
     background: url('../images/job-background.png');
-    width: 2000px;
     height: 350px;
-    position: relative;
+    width: 50%;
 }
 
-.text-area-1 {
-    margin-left: 12%;
-    margin-top: 12%;
-}
+
 
 .layer1 {
     background-color: rgba(3, 128, 255);
     opacity: 0.8;
-    position: absolute;
     width: 100%;
     height: 350px;
     margin-top: 0%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
 .text1 {
@@ -578,10 +580,13 @@ h4:hover,
 }
 
 .background-area-2 {
-    width: 2000px;
+    width: 50%;
+    background-color: #2b9bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     height: 350px;
-    background-color: #169ce8;
-    margin: 0% 0%;
 
 }
 
@@ -646,9 +651,8 @@ h4:hover,
 }
 
 .sec5 {
-    width: 100%;
-    height: fit-content;
     background-color: #061a40;
+    padding: 6rem 0 1rem 6rem;
 }
 
 .footer-image {
@@ -727,7 +731,7 @@ h4:hover,
     background-color: #012a4a;
     border: 1px #7d8597 solid;
     padding: 3%;
-    border-radius: 5%;
+    width: 100%;
 }
 
 .btn-subscribe {
@@ -735,18 +739,18 @@ h4:hover,
     color: white;
 }
 
-.footer-area {
-    margin-left: 16%;
+/* .footer-area {
+   
     padding-top: 10%;
     padding-bottom: 10%;
-}
+} */
 
 .copyright-text {
     font-size: 0.875rem;
     color: #aab1b7;
     font-weight: 400;
-    padding: 2%;
     line-height: 2;
+    margin-top: 9rem;
     margin-left: 32%;
 }
 
@@ -756,8 +760,15 @@ h4:hover,
 
 }
 
-
-
+.btn-input{
+    position: relative;
+    width: 100%;
+}
+#button-addon2{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
 /* .svg-icon{
     color:#00D363 ;
 } */
@@ -855,12 +866,26 @@ h4:hover,
     .sec4 {
         margin-bottom: 30%;
     }
+    .two-blue-container{
+        display: block;
+    }
+    .background-area-1, .background-area-2, .layer1 {
+        width: 100%;
+        height: 200px;
+    }
 
-
+    .sec5{
+        padding: 1rem 0 1rem 1rem;
+    }
+    .copyright-text{
+        margin-left: 1rem;
+        margin-top: 5rem;
+    }
 }
 
 
 @media (max-width: 575px) {
+    
     .job-row {
         margin-left: -43px;
     }
@@ -875,6 +900,9 @@ h4:hover,
 
     .sec4 {
         margin-bottom: 57%;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
     }
 }
 
