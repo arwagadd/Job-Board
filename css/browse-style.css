@@ -35,16 +35,17 @@
 
 .filter-browse {
     height: 900px;
-    margin-left: 8%;
     padding: 1%;
 }
 
 .price-range {
     width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .font5-browse {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-top: 3%;
 }
 
@@ -59,18 +60,15 @@
     width: 86%;
 }
 
-
+.job-list-details{
+    margin-bottom: 5rem;
+}
 
 
 @media (max-width: 575px) {
-    html {
-        width: 113%;
-    }
+    
 
-    .filter-browse {
-        margin-left: 13%;
-        margin-right: 15%;
-    }
+    
 
 }
 
@@ -84,9 +82,20 @@
     }
 
     .job-list {
-        margin-left: -2%;
         margin-top: 5%;
-        width: 102%;
+        width: auto;
+        margin: 4rem 3% 1rem 3%;
+        padding: 0 1rem;
+    }
+
+    .single-division-category{
+        margin: 3%;
+    }
+
+    .filter-browse{
+        padding:5% ;
+        margin: 3%;
+
     }
 }
 
