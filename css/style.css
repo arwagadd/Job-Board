@@ -1,10 +1,11 @@
 html,
 body {
-    font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-style: normal;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Baloo 2', cursive;
+
 }
 
 
@@ -303,7 +304,6 @@ h4:hover,
     margin-top: 15px;
     float: left;
 }
-
 .job-heading-1 {
     margin-right: 40px;
 }
@@ -427,7 +427,7 @@ h4:hover,
 
 .button-style {
     background-color: #00D363;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 0.3rem;
     padding: 0.7em 1.5em;
     color: white;
@@ -506,7 +506,6 @@ h4:hover,
 
 
 .company-division {
-    height: 200px;
     transition-duration: 0.5s;
     box-sizing: content-box;
     border: 1px solid transparent;
@@ -657,7 +656,6 @@ h4:hover,
 .footer-image {
     margin-bottom: 12%;
 }
-
 .footer-text {
     font-size: 0.875rem;
     color: #aab1b7;
@@ -742,7 +740,6 @@ h4:hover,
 
     padding-top: 5%;
     padding-bottom: 3%;
-    margin-left: 13%;
 }
 
 .copyright-text {
@@ -768,7 +765,7 @@ h4:hover,
 #button-addon2 {
     position: absolute;
     right: 7px;
-    top: 7px;
+    top: 15%;
 }
 
 
@@ -837,7 +834,7 @@ h4:hover,
 
     .slider-text {
         position: initial;
-        margin: 2rem;
+        margin: 2rem 0;
     }
 
     .buttonForm {
@@ -914,6 +911,14 @@ h4:hover,
     .carousel-control-prev,
     .carousel-control-next {
         display: none;
+    }
+
+    #mainNavbar{
+        padding: 1rem;
+    }
+
+    .filter-browse{
+        margin: 0;
     }
 }
 
