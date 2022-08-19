@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/browse-style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <section class="sec1">
+        <div class="introo container-fluid">
+            <nav id="mainNavbar" class="navbar navbar-expand-lg">
+                <a href="" class="navbar-brand justify-content-lg-start"><img src="images/search-icon.png"
+                        alt="searchIcon"></a>
+                <div class="collapse navbar-collapse  justify-content-center">
+
+                    <div class="navLinkGroup navbar-nav">
+                        <li class="nav-item ">
+                            <a href="index.html" target="_self" class="nav-link font1">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="browse.html" target="_self" class="nav-link font1">Browse Job</a>
+                        </li>
+                        <li class="nav-item droplist-nav">
+                            <div class="drop-link-arrow">
+                                <a href="" class="nav-link font1">Pages</a>
+                                <i class="fa-solid fa-angle-down font1"></i>
+                            </div>
+                            <div class="drop-list">
+                                <div class=" components">Candidates</div>
+                                <div class=" components">Job Details</div>
+                            </div>
+                        </li>
+                        <li class="nav-item droplist-nav">
+                            <div class="drop-link-arrow">
+                                <a href="" class="nav-link font1 ">Blog</a>
+                                <i class="fa-solid fa-angle-down font1"></i>
+                            </div>
+                            <div class="drop-list">
+                                <div class=" components">Blog</div>
+                                <div class=" components">Single-Blog</div>
+                            </div>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="" class="nav-link font1">Contact</a>
+                        </li>
+                    </div>
+
+                </div>
+
+
+
+                <div class="appointment">
+                    <a href="" class="nav-link font1">Log in</a>
+                    <button class="buttonNav">Post a Job</button>
+                </div>
+            </nav>
+
+
+
+
+
+
+        </div>
+        <div class="introo2">
+            <div class=" buttonNavbar ml-auto">
+                <nav class="navbar navbar-dark navbar-expand-lg buttonNavbar ">
+                    <button class="navbar-btn navbar-toggler buttonDesign" data-toggle="collapse"
+                        data-target="#navLinks" aria-label="Toggle Navigation">
+                        <span class="font1">MENU&nbsp;</span><span class="navbar-toggler-icon navbarIcon"></span>
+                    </button>
+                    <div class=" firstNavbar collapse navbar-collapse  justify-content-center" id="navLinks">
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" target="_self" class="nav-link font1">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="browse.html" target="_self" class="nav-link font1">Browse Job</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link font1">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link font1">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link font1">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+
+            </div>
+
+
+        </div>
+        <div class="text-and-pic-2 row">
+            <div class="col-lg-8 slider-text">
+                <p class="h3 font3-browse">4536+ Jobs Available</p>
+            </div>
+
+            <div class="col-lg-4 intro-img-2 .img-fluid.">
+                <img style="width:62%;" src="./images/introductory-image.png" alt="Something went wrong">
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="sec3-browse">
+        <div class="row justify-content-center">
+            <div class="col-lg-2 filter-browse bg-white">
+                <p class="font5">Filter</p>
+                <input type="text" class="form-control filter-job" placeholder="Search Keyword">
+
+                <select class="form-control filter-job" name="Location">
+                    <option value="Location">Location</option>
+                    <option value="DH">Dhaka</option>
+                    <option value="RG">Rangpur</option>
+                    <option value="SY">Sylet</option>
+                </select>
+
+                <select class="form-control filter-job" name="Category">
+                    <option value="category">Category</option>
+                    <option value="C1">Category 1</option>
+                    <option value="C2">Category 2</option>
+                </select>
+
+                <select class="form-control filter-job" name="Category">
+                    <option value="category">Experience</option>
+                    <option value="C1">Experience 1</option>
+                    <option value="C2">Experience 2</option>
+                </select>
+
+                <select class="form-control filter-job" name="Category">
+                    <option value="category">Job Type</option>
+                    <option value="C1">Full Time</option>
+                    <option value="C2">Part Time</option>
+                </select>
+
+                <select class="form-control filter-job" name="Category">
+                    <option value="category">Qualification</option>
+                    <option value="C1">Qualification 1</option>
+                    <option value="C2">Qualification 2</option>
+                </select>
+
+                <select class="form-control filter-job" name="Category">
+                    <option value="category">Gender</option>
+                    <option value="C1">Male</option>
+                    <option value="C2">Female</option>
+                </select>
+
+                <div class="price-range">
+                    <p class="mt-5 mb-2">Price Range</p>
+                    <input class="filter-job" type="range" min="0" max="24600" value="0" id="slider">
+                </div>
+
+                <button class="buttonForm filter-job">Reset</button>
+
+            </div>
+
+            <div class="col-lg-7">
+                <div class="job-list bg-white row">
+                    <p class="col-lg-8 font5-browse">Job Listing</p>
+                    <select class=" col-lg-3 form-control filter-job" name="Category">
+                        <option value="category">Most Recent</option>
+                        <option value="C1">Marketer</option>
+                        <option value="C2">Wordpress</option>
+                        <option value="C2">Designer</option>
+                    </select>
+                </div>
+
+
+
+                <div class="job-list-details">
+
+                    <div class="row job-details">
+                        <div class="single-division-category col-lg-10 bg-white">
+                            <div class="row justify-content-between">
+                                <div class="col-lg-8 job-picture-text">
+                                    <img class="job-img" src="./images/creative-desiginer.png" alt="Picture not found.">
+                                    <div>
+                                        <h4>Software Engineer</h4>
+                                        <div class="job-div sub-heading">
+                                            <p class="job-heading-1"><i class="fa-solid fa-location-dot"></i>
+                                                California, USA
+                                            </p>
+                                            <p> <i class="fa-solid fa-clock"></i> Part-time</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 apply-job">
+                                    <div class="heart-apply-btn">
+                                        <button class="heart-btn">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                        <button class="button-style">Apply Job</button>
+                                    </div>
+                                    <p class="date-div">Date line: 31 Jan 2020</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row job-details">
+                        <div class="single-division-category col-lg-10 bg-white">
+                            <div class="row justify-content-between">
+                                <div class="col-lg-8 job-picture-text">
+                                    <img class="job-img" src="./images/digital-marketer.png" alt="Picture not found.">
+                                    <div>
+                                        <h4>Digital Marketer</h4>
+                                        <div class="job-div sub-heading">
+                                            <p class="job-heading-1"><i class="fa-solid fa-location-dot"></i>
+                                                California, USA
+                                            </p>
+                                            <p> <i class="fa-solid fa-clock"></i> Part-time</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 apply-job">
+                                    <div class="heart-apply-btn">
+                                        <button class="heart-btn">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                        <button class="button-style">Apply Job</button>
+                                    </div>
+                                    <p class="date-div">Date line: 31 Jan 2020</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row job-details">
+                        <div class="single-division-category col-lg-10 bg-white">
+                            <div class="row justify-content-between">
+                                <div class="col-lg-8 job-picture-text">
+                                    <img class="job-img" src="./images/wordpress-developer.png"
+                                        alt="Picture not found.">
+                                    <div>
+                                        <h4>Wordpress Developer</h4>
+                                        <div class="job-div sub-heading">
+                                            <p class="job-heading-1"><i class="fa-solid fa-location-dot"></i>
+                                                California, USA
+                                            </p>
+                                            <p> <i class="fa-solid fa-clock"></i> Part-time</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 apply-job">
+                                    <div class="heart-apply-btn">
+                                        <button class="heart-btn">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                        <button class="button-style">Apply Job</button>
+                                    </div>
+                                    <p class="date-div">Date line: 31 Jan 2020</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row job-details">
+                        <div class="single-division-category col-lg-10 bg-white">
+                            <div class="row justify-content-between">
+                                <div class="col-lg-8 job-picture-text">
+                                    <img class="job-img" src="./images/visual-designer.png" alt="Picture not found.">
+                                    <div>
+                                        <h4>Visual Designer</h4>
+                                        <div class="job-div sub-heading">
+                                            <p class="job-heading-1"><i class="fa-solid fa-location-dot"></i>
+                                                California, USA
+                                            </p>
+                                            <p> <i class="fa-solid fa-clock"></i> Part-time</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 apply-job">
+                                    <div class="heart-apply-btn">
+                                        <button class="heart-btn">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                        <button class="button-style">Apply Job</button>
+                                    </div>
+                                    <p class="date-div">Date line: 31 Jan 2020</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row job-details">
+                        <div class="single-division-category col-lg-10 bg-white">
+                            <div class="row justify-content-between">
+                                <div class="col-lg-8 job-picture-text">
+                                    <img class="job-img" src="./images/software-engineer2.png" alt="Picture not found.">
+                                    <div>
+                                        <h4>Software Engineer</h4>
+                                        <div class="job-div sub-heading">
+                                            <p class="job-heading-1"><i class="fa-solid fa-location-dot"></i>
+                                                California, USA
+                                            </p>
+                                            <p> <i class="fa-solid fa-clock"></i> Part-time</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 apply-job">
+                                    <div class="heart-apply-btn">
+                                        <button class="heart-btn">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                        <button class="button-style">Apply Job</button>
+                                    </div>
+                                    <p class="date-div">Date line: 31 Jan 2020</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row job-details">
+                        <div class="single-division-category col-lg-10 bg-white">
+                            <div class="row justify-content-between">
+                                <div class="col-lg-8 job-picture-text">
+                                    <img class="job-img" src="./images/creative-desiginer.png" alt="Picture not found.">
+                                    <div>
+                                        <h4>Creative Designer</h4>
+                                        <div class="job-div sub-heading">
+                                            <p class="job-heading-1"><i class="fa-solid fa-location-dot"></i>
+                                                California, USA
+                                            </p>
+                                            <p> <i class="fa-solid fa-clock"></i> Part-time</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 apply-job">
+                                    <div class="heart-apply-btn">
+                                        <button class="heart-btn">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                        <button class="button-style">Apply Job</button>
+                                    </div>
+                                    <p class="date-div">Date line: 31 Jan 2020</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer class="sec5">
+        <div class="row container justify-content-between footer-area">
+            <div class="col-lg-3">
+                <img class="footer-image"
+                    src="data:image/webp;base64,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"
+                    alt="Picture not found.">
+
+                <div class="footer-text"> finloan@support.com <br>
+                    +10 873 672 6782 <br>
+                    600/D, Green road, NewYork
+                </div>
+                <div class="social-media-logos mt-4">
+                    <i class="google-logo fa-brands fa-facebook-f"></i>
+                    <i class="google-logo fa-brands fa-google-plus-g"></i>
+                    <i class="google-logo fa-brands fa-twitter"></i>
+                    <i class="google-logo fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+                <p class="font10">Company</p>
+                <div class="company-div">
+                    <a href="#/">About</a> <br>
+                    <a href="#/">Pricing</a> <br>
+                    <a href="#/">Carrier Tips</a> <br>
+                    <a href="#/">FAQ</a>
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+                <p class="font10">Category</p>
+                <div class="company-div">
+                    <a href="#/">Design & Art</a> <br>
+                    <a href="#/">Engineering</a> <br>
+                    <a href="#/">Sales & Marketing</a> <br>
+                    <a href="#/">Finance</a>
+                </div>
+
+            </div>
+            <div class="col-lg-5">
+                <p class="font10-subs">Subscribe</p>
+                <div class="input-group mb-3">
+                    <div class="btn-input">
+                        <input class="form-div" type="email" class="form-control" placeholder="Enter your mail">
+                        <button class="btn-subscribe btn btn-outline-secondary" type="button"
+                            id="button-addon2">Subscribe</button>
+                    </div>
+
+
+                    <p class="footer-text mt-3">Esteem spirit temper too say adieus who direct esteem esteems luckily.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p class="copyright-text">Copyright ©2022 All rights reserved | This template is made with <i
+                class="fa-solid fa-heart"></i> by <span class="color-text">Colorlib</span> </p>
+
+
+
+
+    </footer>
+
+
+</body>
+
+</html>
