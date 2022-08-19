@@ -1,0 +1,11 @@
+.candidate-img-2 {
+    text-align: center;
+}
+
+.sub-heading-2 {
+    display: flex;
+    justify-content: center;
+    color: #aab1b7;
+    margin-top: 15px;
+    align-items: center;
+}
