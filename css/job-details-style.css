@@ -1,0 +1,71 @@
+.single-division-category {
+    border-bottom: 1px solid #ced4da;
+    padding: 4%;
+}
+
+.font5 {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.job-heading {
+    color: #7a838b;
+}
+
+.job-data {
+    margin: 0px 7%;
+    padding: 6%;
+}
+
+.font11 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.apply-wrap {
+    margin: 7%;
+    padding: 3%;
+}
+
+.form-control {
+    /* font-size: 1.2rem; */
+    margin-bottom: 3%;
+
+}
+
+.font12 {
+    margin: 6% 2%;
+    padding: 12% 4%;
+    border-bottom: 1px solid #ced4da;
+}
+
+.job-summary li {
+    margin-bottom: 12%;
+}
+
+.job-summary {
+    justify-content: center;
+    margin-top: 11%;
+}
+
+.nav-share {
+    margin: 16% -6%;
+    padding: 4% 6%;
+}
+
+.share-icon {
+    margin-right: 3%;
+    color: lightgray;
+}
+
+.share-icon:hover {
+    margin-right: 5%;
+    color: #00d363;
+    cursor: pointer;
+}
+
+
+.top-head {
+    margin-top: 20%;
+}

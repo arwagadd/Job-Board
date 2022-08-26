@@ -1,0 +1,32 @@
+.mapouter {
+    position: relative;
+    text-align: center;
+    height: 600px;
+    width: 500px;
+}
+
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 600px;
+    width: 1100px;
+    margin-top: 100px;
+}
+
+.contact-div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.fa-house,
+.fa-mobile-screen-button,
+.fa-envelope {
+    margin-top: 21px;
+    font-size: 26px;
+    color: #aab1b7;
+}
+
+.contact-details {
+    margin-top: 70px;
+}

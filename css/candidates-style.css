@@ -9,3 +9,9 @@
     margin-top: 15px;
     align-items: center;
 }
+
+.popular-category-2 {
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 3%;
+}
