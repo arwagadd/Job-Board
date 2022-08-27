@@ -8,7 +8,9 @@ body {
 
 }
 
-
+a{
+    cursor: pointer;
+}
 .sec1 {
     background-image: url(../images/background-blue.png);
     height: fit-content;
@@ -16,11 +18,19 @@ body {
     position: relative;
     display: block;
     width: 100%;
+    padding-top: 50px;
 }
 
 .introo {
-    position: relative;
+    position: fixed;
+    top: 0;
+    /* width: 100%;
+    left: 5%; */
+    z-index: 1;
+}
 
+#mainNavbar{
+    border-radius: 5px;
 }
 
 .intro-img {
@@ -30,9 +40,7 @@ body {
     width: 50%;
 }
 
-#mainNavbar {
-    padding: 1.5rem 4rem;
-}
+
 
 .nav-item {
     margin-right: 2rem;
@@ -182,7 +190,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 5%;
+    margin: 0 5% 5% 5% 5%;
+    padding: 1rem;
 }
 
 
@@ -512,7 +521,7 @@ h4:hover,
     box-sizing: content-box;
     border: 1px solid transparent;
     border-radius: 5px;
-    padding-top: 20px;
+    padding: 20px;
 
 }
 
@@ -732,6 +741,7 @@ h4:hover,
     border: 1px #7d8597 solid;
     padding: 3%;
     width: 100%;
+    color: white;
 }
 
 .btn-subscribe {
@@ -743,7 +753,6 @@ h4:hover,
 
     padding-top: 5%;
     padding-bottom: 3%;
-    margin-left: 10%;
 }
 
 .copyright-text {
@@ -768,8 +777,9 @@ h4:hover,
 
 #button-addon2 {
     position: absolute;
-    right: 7px;
-    top: 15%;
+    right: 4px;
+    height: 80%;
+    top: 10%;
 }
 
 
@@ -810,6 +820,7 @@ h4:hover,
 
     .sec1 {
         padding-bottom: 1rem;
+        padding-top: 10px;
     }
 
     /*tablets*/
@@ -826,7 +837,9 @@ h4:hover,
     .intro-img {
         display: none;
     }
-
+    .introo{
+        display: none;
+    }
     .introo2 {
         display: block;
         margin: 0 1rem 0 1rem;
@@ -838,7 +851,7 @@ h4:hover,
 
     .slider-text {
         position: initial;
-        margin: 2rem 0;
+        margin: 2rem 1rem;
     }
 
     .buttonForm {
@@ -884,7 +897,7 @@ h4:hover,
     }
 
     .sec5 {
-        padding: 1rem 0 1rem 1rem;
+        padding: 1rem 0 1rem 0;
     }
 
     .copyright-text {
@@ -897,7 +910,7 @@ h4:hover,
 @media (max-width: 575px) {
 
     .footer-area {
-        margin-left: 1%;
+        margin-left: 0;
     }
 
     .job-row {
@@ -927,6 +940,9 @@ h4:hover,
 
     .filter-browse {
         margin: 0;
+    }
+    .footer-image{
+        width: 150px;
     }
 }
 

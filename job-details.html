@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Project</title>
+    <title>Job Details</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -20,64 +20,59 @@
 </head>
 
 <body>
+    <div class="introo container-fluid">
+        <nav id="mainNavbar" class="navbar navbar-expand-lg">
+            <a href="" class="navbar-brand justify-content-lg-start"><img class = "footer-image" src="images/search-icon.png"
+                    alt="searchIcon"></a>
+            <div class="collapse navbar-collapse  justify-content-center">
 
+                <div class="navLinkGroup navbar-nav">
+                    <li class="nav-item ">
+                        <a href="index.html" target="_self" class="nav-link font1">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="browse.html" target="_self" class="nav-link font1">Browse Job</a>
+                    </li>
+                    <li class="nav-item droplist-nav">
+                        <div class="drop-link-arrow">
+                            <a href="" class="nav-link font1">Pages</a>
+                            <i class="fa-solid fa-angle-down font1"></i>
+                        </div>
+                        <div class="drop-list">
+                            <a class="components" href="candidates.html" target="_self"
+                                style="color:black">Candidates</a> <br>
+                            <a class="components" href="candidates.html" target="_self" style="color:black">Job
+                                Details</a>
+                        </div>
+                    </li>
+                    <li class="nav-item droplist-nav">
+                        <div class="drop-link-arrow">
+                            <a href="" class="nav-link font1 ">Blog</a>
+                            <i class="fa-solid fa-angle-down font1"></i>
+                        </div>
+                        <div class="drop-list">
+                            <div class=" components">Blog</div>
+                            <div class=" components">Single-Blog</div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="" class="nav-link font1">Contact</a>
+                    </li>
+                </div>
+
+            </div>
+
+
+
+            <div class="appointment">
+                <a href="" class="nav-link font1">Log in</a>
+                <button class="buttonNav">Post a Job</button>
+            </div>
+        </nav>
+
+    </div>
     <section class="sec1">
-        <div class="introo container-fluid">
-            <nav id="mainNavbar" class="navbar navbar-expand-lg">
-                <a href="" class="navbar-brand justify-content-lg-start"><img src="images/search-icon.png"
-                        alt="searchIcon"></a>
-                <div class="collapse navbar-collapse  justify-content-center">
-
-                    <div class="navLinkGroup navbar-nav">
-                        <li class="nav-item ">
-                            <a href="index.html" target="_self" class="nav-link font1">Home</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a href="browse.html" target="_self" class="nav-link font1">Browse Job</a>
-                        </li>
-                        <li class="nav-item droplist-nav">
-                            <div class="drop-link-arrow">
-                                <a href="" class="nav-link font1">Pages</a>
-                                <i class="fa-solid fa-angle-down font1"></i>
-                            </div>
-                            <div class="drop-list">
-                                <a class="components" href="candidates.html" target="_self"
-                                    style="color:black">Candidates</a> <br>
-                                <a class="components" href="candidates.html" target="_self" style="color:black">Job
-                                    Details</a>
-                            </div>
-                        </li>
-                        <li class="nav-item droplist-nav">
-                            <div class="drop-link-arrow">
-                                <a href="" class="nav-link font1 ">Blog</a>
-                                <i class="fa-solid fa-angle-down font1"></i>
-                            </div>
-                            <div class="drop-list">
-                                <div class=" components">Blog</div>
-                                <div class=" components">Single-Blog</div>
-                            </div>
-                        </li>
-                        <li class="nav-item ">
-                            <a href="" class="nav-link font1">Contact</a>
-                        </li>
-                    </div>
-
-                </div>
-
-
-
-                <div class="appointment">
-                    <a href="" class="nav-link font1">Log in</a>
-                    <button class="buttonNav">Post a Job</button>
-                </div>
-            </nav>
-
-
-
-
-
-
-        </div>
+        
         <div class="introo2">
             <div class=" buttonNavbar ml-auto">
                 <nav class="navbar navbar-dark navbar-expand-lg buttonNavbar ">
@@ -208,12 +203,16 @@
                             <input type="text" class="form-control form-control-lg"
                                 placeholder="Website/Portfolio Link">
 
-                            <input type="file" class="form-control form-control-lg" placeholder="Upload CV">
+                            <div class="form-control form-control-lg upload-div">    
+                                <input type="file" id="actual-btn" hidden/>
+                                <label class="upload-button mb-0" for="actual-btn">Choose File</label>
+                                <span id="file-chosen">No file chosen</span>
 
+                            </div>
                             <input type="text" class="form-control form-control-lg" placeholder="Coverletter">
+                            
 
-
-                            <button class="button-style">Apply Job</button>
+                            <button class="button-style upload-apply">Apply Job</button>
 
                         </div>
                     </form>
@@ -221,28 +220,9 @@
             </div>
             <div class="col-lg-3">
 
-                <!-- <div>
-                    <h3 class="font12">Job Summary</h3>
-                    <ul>
-                        <li><span class="job-heading">Published on: </span>12 Nov, 2019</li>
-                        <li><span class="job-heading">Vacancy: </span>2 Position</li>
-                        <li><span class="job-heading">Salary: </span>50k - 120k/y</li>
-                        <li><span class="job-heading">Location: </span>California, USA</li>
-                        <li><span class="job-heading">Job Nature: </span>Full-time</li>
-                    </ul>
-
-                </div>
-
-
-
-            </div>
-
-        </div> -->
-
-
                 <div class="row job-summary">
                     <div class="col-lg-10 bg-white">
-                        <div class="row justify-content-between">
+                        <div class="row justify-content-between job-summary">
 
                             <div>
                                 <h3 class="font12">Job Summary</h3>
@@ -279,7 +259,7 @@
         <div class="row container justify-content-between footer-area">
             <div class="col-lg-3">
                 <img class="footer-image"
-                    src="data:image/webp;base64,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"
+                    src="./images/search-icon.png"
                     alt="Picture not found.">
 
                 <div class="footer-text"> finloan@support.com <br>
@@ -330,14 +310,40 @@
             </div>
         </div>
         <p class="copyright-text">Copyright ©2022 All rights reserved | This template is made with <i
-                class="fa-solid fa-heart"></i> by <span class="color-text">Colorlib</span> </p>
+                class="fa-solid fa-heart"></i> by <span class="color-text">Arwa Gad</span> </p>
 
 
 
 
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+        <script>
+            function debounce(method, delay) {
+                clearTimeout(method._tId);
+                method._tId= setTimeout(function(){
+                method();
+                }, delay);
+            }
+            
+            var nav = document.getElementById('mainNavbar');
+            function func () { 
+                nav.style.backgroundColor="rgba(0,29,56,.8)";
+            };
+    
+            $(window).scroll(function() {
+                debounce(func, 100);
+            });
+    
+        </script>    
 </body>
 
 </html>

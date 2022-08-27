@@ -69,3 +69,37 @@
 .top-head {
     margin-top: 20%;
 }
+
+.upload-button{
+  background-color: indigo;
+  color: white;
+  padding: 3px 5px 3px 5px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+#file-chosen{
+    margin-left: 1rem;
+}
+
+.upload-div{
+    display: flex;
+    align-items: center;
+}
+
+.upload-apply{
+    width: -webkit-fill-available;
+}
+
+@media (max-width: 992px) {
+    .job-data{
+        margin:1rem 0 ;
+    }
+
+    .apply-wrap{
+        margin: 3rem 0;
+    }
+    .job-summary{
+        margin: 0 0.5rem;
+    }
+}
