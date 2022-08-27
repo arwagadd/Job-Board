@@ -24,8 +24,8 @@
 <body>
     <div class="introo container-fluid">
         <nav id="mainNavbar" class="navbar navbar-expand-lg">
-            <a href="" class="navbar-brand justify-content-lg-start"><img class="footer-image" src="images/search-icon.png"
-                    alt="searchIcon"></a>
+            <a href="" class="navbar-brand justify-content-lg-start"><img class="footer-image"
+                    src="images/search-icon.png" alt="searchIcon"></a>
             <div class="collapse navbar-collapse  justify-content-center">
 
                 <div class="navLinkGroup navbar-nav">
@@ -41,8 +41,10 @@
                             <i class="fa-solid fa-angle-down font1"></i>
                         </div>
                         <div class="drop-list">
-                            <div class="components"><a href="candidates.html" target="_self" style="color:black">Candidates</a> <br></div>
-                            <div class="components"><a href="job-details.html" target="_self" style="color:black">Job Details</a> <br></div>
+                            <div class="components"><a href="candidates.html" target="_self"
+                                    style="color:black">Candidates</a> <br></div>
+                            <div class="components"><a href="job-details.html" target="_self" style="color:black">Job
+                                    Details</a> <br></div>
                         </div>
                     </li>
                     <li class="nav-item droplist-nav">
@@ -51,8 +53,10 @@
                             <i class="fa-solid fa-angle-down font1"></i>
                         </div>
                         <div class="drop-list">
-                            <div class="components"><a href="blog.html" target="_self" style="color:black">Blog</a> <br></div>
-                            <div class="components"><a href="blog.html" target="_self" style="color:black">Single-Blog</a> <br></div>
+                            <div class="components"><a href="blog.html" target="_self" style="color:black">Blog</a> <br>
+                            </div>
+                            <div class="components"><a href="blog.html" target="_self"
+                                    style="color:black">Single-Blog</a> <br></div>
                         </div>
                     </li>
                     <li class="nav-item ">
@@ -70,7 +74,7 @@
         </nav>
     </div>
     <section class="sec1">
-        
+
         <div class="introo2">
             <div class=" buttonNavbar ml-auto">
                 <nav class="navbar navbar-dark navbar-expand-lg buttonNavbar ">
@@ -88,21 +92,23 @@
                                 <a href="browse.html" target="_self" class="nav-link font1 text-white">Browse Job</a>
                             </li>
                             <li class="nav-item">
-                                <a  href="#" id="navbardrop" data-toggle="dropdown" class="dropdown-toggle nav-link font1 text-white">Pages</a>
+                                <a href="#" id="navbardrop" data-toggle="dropdown"
+                                    class="dropdown-toggle nav-link font1 text-white">Pages</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="candidates.html">Candidates</a>
                                     <a class="dropdown-item" href="job-details.html">job-details</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a  href="#" id="navbardrop" data-toggle="dropdown" class="dropdown-toggle nav-link font1 text-white">Blog</a>
+                                <a href="#" id="navbardrop" data-toggle="dropdown"
+                                    class="dropdown-toggle nav-link font1 text-white">Blog</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="blog.html">Blog</a>
                                     <a class="dropdown-item" href="blog.html">Single-Blog</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link font1 text-white">Contact</a>
+                                <a href="contact.html" class="nav-link font1 text-white">Contact</a>
                             </li>
                         </ul>
 
@@ -147,13 +153,14 @@
                             <input type="text" class="form-control form-control-lg" placeholder="Enter message">
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Enter your name">
+                                    <input type="text" class="form-control form-control-lg"
+                                        placeholder="Enter your name">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <input type="email" class="form-control form-control-lg"
                                         placeholder="Enter email address">
                                 </div>
-                            </div>    
+                            </div>
                             <input type="text" class="form-control form-control-lg" placeholder="Enter Subject">
 
 
@@ -199,9 +206,7 @@
     <footer class="sec5">
         <div class="row container justify-content-between footer-area">
             <div class="col-lg-3">
-                <img class="footer-image"
-                    src="./images/search-icon.png"
-                    alt="Picture not found.">
+                <img class="footer-image" src="./images/search-icon.png" alt="Picture not found.">
 
                 <div class="footer-text"> finloan@support.com <br>
                     +10 873 672 6782 <br>
@@ -271,21 +276,21 @@
     <script>
         function debounce(method, delay) {
             clearTimeout(method._tId);
-            method._tId= setTimeout(function(){
-            method();
+            method._tId = setTimeout(function () {
+                method();
             }, delay);
         }
-        
+
         var nav = document.getElementById('mainNavbar');
-        function func () { 
-            nav.style.backgroundColor="rgba(0,29,56,.8)";
+        function func() {
+            nav.style.backgroundColor = "rgba(0,29,56,.8)";
         };
 
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             debounce(func, 100);
         });
 
-    </script>    
+    </script>
 </body>
 
 </html>
