@@ -13,6 +13,7 @@
 
 .text-and-pic-2 {
   display: flex;
+  padding-top: 6rem;
 }
 
 .sec3-browse {
@@ -107,5 +108,8 @@
   .font3-browse {
       font-size: 2rem;
       margin-left: 1%;
+  }
+  .text-and-pic-2{
+    padding-top: 0;
   }
 }

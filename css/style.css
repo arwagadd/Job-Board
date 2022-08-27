@@ -127,7 +127,7 @@ a{
     transition: all ease 0.5s;
     padding: 0 5rem 1rem 1rem;
     border: 1px solid rgb(122, 131, 139);
-    margin-top: 2rem;
+    margin-top: 2.1rem;
 }
 
 .drop-link-arrow {
@@ -141,7 +141,7 @@ a{
     font-weight: 600;
 }
 
-.components:hover {
+.components:hover{
     text-decoration: underline;
     cursor: pointer;
     color: rgb(122, 131, 139);
@@ -870,6 +870,8 @@ h4:hover,
 
     .job-row {
         display: block;
+        margin-left: 0;
+        margin-bottom: 6%;
     }
 
     .link-location {
@@ -913,9 +915,7 @@ h4:hover,
         margin-left: 0;
     }
 
-    .job-row {
-        margin-left: -43px;
-    }
+    
 
     .job-div {
         display: block;
